@@ -9,13 +9,15 @@ import { AppComponent } from './app.component';
 import { PostListComponentComponent } from './component/post-list/post-list-component.component';
 import { PostListItemComponentComponent } from './component/post-list-item-component/post-list-item-component.component';
 import { FormComponent } from './component/form/form.component';
+import { FormPageComponent } from './page/form-page/form-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PostListComponentComponent,
     PostListItemComponentComponent,
-    FormComponent
+    FormComponent,
+    FormPageComponent
   ],
   imports: [
     BrowserModule,
