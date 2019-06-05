@@ -1,11 +1,33 @@
 <div class="field">
-  <form [Form]>
+
+  <form [formGroup]="exoForm" 
+  (ngSubmit)="onSubmit()">
+    
     <h3>Forms</h3>
+    
     <label for="title">
-      <input class="input" type="text" placeholder="title" id="title">
+        Title
+      <input 
+      class="input" 
+      type="text" 
+      id="title"
+      formControlName="title"
+      name="title"
+      >
     </label>
+    
     <label for="resume">
-        <input class="input" type="text" placeholder="resume" id="resume">
-      </label>
+      Resume
+        <input 
+        class="input" 
+        type="text" 
+        formControlName="resume" 
+        id="resume"
+        name="resume">
+    </label>
+
+    <button class="button" type="submit">Button</button>
+
   </form>
+
 </div>
